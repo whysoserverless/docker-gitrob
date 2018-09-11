@@ -1,5 +1,5 @@
 FROM alpine:3.8
-
+RUN apk update && apk add nodejs-current && apk add nodejs-npm && apk add curl
 RUN apk add --no-cache \
 		ca-certificates
 
